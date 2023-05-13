@@ -5,17 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Contact-Us</title>
+    <link rel="stylesheet" href="contact.css">
     <script
       src="https://kit.fontawesome.com/8ca5f12d51.js"
       crossorigin="anonymous"
     ></script>
-    <title>GDQ Labs</title>
 </head>
 
 <body>
-    <!-- nav bar -->
     <header class="site-header">
         <div class="wrapper site-header__wrapper">
           <div class="site-header__start">
@@ -33,7 +31,7 @@
               </div>
               <ul class="nav__wrapper">
                 <li class="nav__item">
-                  <a href="#about-us-page" data-scroll="" class="menu">About Us</a>
+                  <a href="index.html" data-scroll="" class="menu">About Us</a>
                 </li>
                 <li class="nav__item">
                   <a href="slider.html" data-scroll="">Technology</a>
@@ -42,50 +40,37 @@
                   <a href="team.html" data-scroll="" class="menu">Our Team</a>
                 </li>
                 <li class="nav__item">
-                  <a href="contact.html" data-scroll="" class="menu">Contact Us</a>
+                  <a href="#" data-scroll="" class="menu">Contact Us</a>
                 </li>
               </ul>
             </nav>
           </div>
           <div class="site-header__end">
-            <a class="button-nav" href="">Products</a>
+            <a href=""><button class="btn-type-1">Products</button></a>
           </div>
         </div>
       </header>
-      <script src="script.js"></script>
-    <!-- landing page -->
-    <div class="home-landing">
-        <h1 class="landing-heading">ONE STOP SOLUTION <br> FOR QUANTUM</h1>
-    </div>
-    <div class="landing-img">
-        <img src="home-img.png" alt="" class="img-land">
-        <div class="bottom-right">
-            <h3 id="land-img-head">Quantum Computing for Complex Problems.
-            </h3>
-            <p id="land-img-para">We are developing neutral atom quantum computers for analog and digital computing.
-            </p>
-            <button class="btn-type-1">Learn More</button>
+      <!-- ***********Nav Bar Code Ends*************** -->
+    <div class="contact">
+        <div class="contact-form">
+            <h1>CONTACT US</h1>
+            <p>Lorem ipsum dolor sit amet consectetur. Mauris ullamcorper lobortis vitae feugiat augue consequat
+                fermentum. Ante ultricies fringilla volutpat faucibus consequat.</p>
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Email">
+            <textarea name="Message" id="" cols="30" rows="10" fixed placeholder="Message"></textarea>
+            <button>Send</button>
         </div>
-
+        <div class="contact-card">
+            <div class="contact-card-inner">
+                <h3>INFO</h3>
+                <p><img src="Address.png" alt="">Lorem ipsum dolor sit amet consectetur.</p>
+                <p><img src="Email.png" alt="" srcset="">gdqlabs@gmail.com</p>
+                <p><img src="Phone.png" alt="" srcset="">999-999-9999</p>
+            </div>
+        </div>
     </div>
-    <!-- About Us Section -->
-    <div class="about-us" id="about-us-page">
-        <h2 class="titles">ABOUT US</h2>
-        <p class="about-para-1">We are a start-up, founded by a quartet of physicists aims to dedicate itself for the development of quantum and quantum-enabling technologies. We utilize quantum physics, electronics, optics, and vacuum technologies to build real-time hardware, quantum sensors, quantum computers and simulators.</p>
-        <p class="about-para-2">Ranging from defense to civil applications today quantum technology has made its relevance in every aspect of life by exploiting the quantum nature of matter. We develop products for quantum sensing related to cold atoms using cooling and trapping them. Also, this feature of trapping atoms is also being used to develop neutral atom quantum computers to solve complex problems such as material designing, portfolio optimization, drug modeling, logistic optimization, etc.</p>
-    </div>
-    <hr style="height: 5px;">
-    <!-- Products Section -->
-    <div class="products">
-        <h2 class="titles">PRODUCTS</h2>
-        <div class="product-images">
-            <img src="product-holder.png" alt="Product" class="products-img">
-            <img src="product-holder2.png" alt="Product" class="products-img">
-            <img src="product-holder.png" alt="Product" class="products-img"></div>
-            <center>
-                <button class="btn-type-1 product-btn">Details</button></center>
-    </div>
-    <!-- Footer -->
+    <!-- *********Footer********** -->
     <div class="footer-body">
         <div class="footer">
             <p class="foothead">GDQ-labs</p>
@@ -94,10 +79,10 @@
                 <div class="footernav">
                     <ul>
                         <li>
-                            <a href="#about-us-page">About Us</a>
+                            <a href="index.html">About Us</a>
                             <a href="slider.html">Technology</a>
                             <a href="team.html">Our Team</a>
-                            <a href="contact.html">Contact Us</a>
+                            <a href="#">Contact Us</a>
                         </li>
                     </ul>
                 </div>
@@ -132,6 +117,7 @@
             </center>
         </div>
     </div>
+    <script src="contact.js"></script>
 </body>
 
 </html>
