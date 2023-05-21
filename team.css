@@ -72,7 +72,7 @@ img {
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
-
+  border-radius: 8px;
   text-align: center;
   background-color: #5d75f5;
   color: white;
@@ -276,7 +276,7 @@ a:link {
 
 h1 {
     font-family: 'Poppins', sans-serif;
-    padding: 4% 7% 6% 0;
+    padding: 4% 7% 2% 0;
     font-size: 40px;
     font-weight: 700;
     text-align: end;
@@ -286,31 +286,30 @@ h1 {
 }
 
 .core-box {
-    display: flex;
-    color: #E5E5E6;
-}
-
-.core-box {
     border-radius: 9px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     color: #E5E5E6;
     margin: 0 5%;
     margin-top: 2%;
     padding: 2%;
+    width: 25%;
 }
-
+.core-row1, .core-row2{
+  display: flex;
+  justify-content: space-around;
+}
 .team-member-img {
-    width: 90%;
-    height: 90%;
+  border-radius: 20px;
 }
 .core-img{
-    width: 35%;
+  display: flex;
+  flex-direction: column;
+    width: 100%;
 }
 .core-details {
-    width: 65%;
-    padding-left: 6%;
+    width: 100%;
 }
 
 .line1 {
@@ -329,6 +328,14 @@ h1 {
     font-size: 28px;
     font-weight: 700;
 }
+.Member-name-adv {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 700;
+}
 
 .linkedin-logo {
     display: flex;
@@ -343,25 +350,20 @@ h1 {
     font-weight: 600;
 }
 
-.posndes {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 27px;
-    text-align: justify;
-}
-
 .team-body hr {
     height: 6px;
     background: #D9D9D9;
 }
 
 /* advisor section  */
+#advisors{
+  padding-bottom: 4%;
+}
 .advisors {
     display: flex;
     flex-direction: row;
     padding: 1% 3%;
     justify-content: center;
-    margin-bottom: 3%;
 }
 .advisor-details{
     width: 100%;
@@ -371,53 +373,15 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1% 6%;
+    margin: 1% 3%;
     padding: 2% 0;
     width: 80%;
 }
 .adv-img{
     width: 100%;
+    border-radius: 100%;
 }
 .advisor-img{
-    width: 100%;
-}
-/* interns  */
-.intern-row1,
-.intern-row2 {
-    display: flex;
-    flex-direction: row;
-    padding: 0% 4%;
-    justify-content: center;
-}
-
-.intern-card {
-    margin: 0 2%;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    font-weight: bolder;
-    font-size: 100%;
-    align-items: center;
-}
-
-.intern-details {
-    position: relative;
-    bottom: 86px;
-    backdrop-filter: brightness(0.9);
-    background: linear-gradient(0deg, #18181d, rgba(30, 37, 81, 0) 100%);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    padding: 3%;
-    width: 100%;
-}
-
-.intern-details .Member-name {
-    font-size: 24px;
-    font-weight: 500;
-}
-.intern-img{
     width: 100%;
 }
 /* ***********Footer code starts***************** */
@@ -577,20 +541,6 @@ button{
   }
 }
 /* ***********Footer code ends***************** */
-
-@media screen and (max-width: 1255px){
-    .intern-details .posntitle{
-        font-size: 15px;
-    }
-    .intern-details{
-        bottom: 78px;
-    }
-}
-@media screen and (max-width: 1044px){
-    .intern-details{
-        bottom: 93px;
-    }
-}
 @media screen and (max-width: 777px){
     .Member-name{
         font-size: 28px;
@@ -611,24 +561,30 @@ button{
     .advisor-details .Member-name{
         font-size: 23px;
     }
-    .intern-details .Member-name{
-        font-size: 20px;
-    }
-    .intern-details .linkedin-logo{
-        width: 20px;
-        height: 20px;
-    }
-    .intern-details .posntitle{
-        font-size: 10px;
-        font-weight: 300;
-    }
-    .intern-details{
-        bottom: 59px;
-    }
+    .advisors{
+      flex-direction: column;
+  }
+  .advisor-img{
+      display: flex;
+      justify-content: center;
+      width: 60%;
+  }
+  .advisor-details{
+      width: 60%;
+  }
+  .advisor-box{
+      width: 88%;
+  }
 }
 @media screen and (max-width: 600px){
+  .core-row1, .core-row2{
+    flex-direction: column;
+  }
     .core-box{
         flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
     .core-img {
         width: 70%;
@@ -642,30 +598,13 @@ button{
     .posndes{
         line-height: 20px;
     }
-    .advisors{
-        flex-direction: column;
-    }
-    .advisor-img{
-        display: flex;
-        justify-content: center;
-        width: 60%;
-    }
-    .advisor-details{
-        width: 60%;
-    }
-    .advisor-box{
-        width: 88%;
-    }
-    .intern-content{
-        display: flex;
-        flex-direction: row;
-    }
-    .intern-row1{
-        width: 50%;
-        flex-direction: column;
-    }
-    .intern-row2{
-        width: 50%;
-        flex-direction: column;
-    }
+    
 }
+@media screen and (max-width: 400px){
+  .Member-name{
+    font-size: 18px;
+}
+  .Member-name-adv{
+    font-size: 18px;
+}
+} 

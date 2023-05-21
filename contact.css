@@ -65,12 +65,11 @@ img {
     outline: inherit;
   }
   .button-nav {
-    font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
-  
+    border-radius: 8px;
     text-align: center;
     background-color: #5d75f5;
     color: white;
@@ -292,7 +291,7 @@ h3 {
 }
 @media screen and (max-width: 768px) {
     .contact{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .contact-card, .contact-form{
         width: 100%;
@@ -313,7 +312,7 @@ h3 {
     }
     .contact-card-inner{
         height: fit-content;
-        padding: 10% 0 15% 20%;
+        padding: 10% 7% 15% 7%;
     }
 }
 /* footer */
