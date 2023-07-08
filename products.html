@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact-Us</title>
-    <link rel="stylesheet" href="contact.css" />
+    <title>Our Products</title>
+    <link rel="stylesheet" href="products.css" />
     <script
       src="https://kit.fontawesome.com/8ca5f12d51.js"
       crossorigin="anonymous"
@@ -13,6 +13,7 @@
   </head>
 
   <body>
+    <!-- Nav Bar -->
     <header class="site-header">
       <div class="wrapper site-header__wrapper">
         <div class="site-header__start">
@@ -53,52 +54,42 @@
         </div>
       </div>
     </header>
-    <!-- ***********Nav Bar Code Ends*************** -->
-    <div class="contact" id="contact">
-      <div class="contact-form">
-        <h1>CONTACT US</h1>
-        <p>
-          Type your message and our team will get back to you as soon as
-          possible.
-        </p>
-        <form action="https://formsubmit.co/gdqlabs@gmail.com" method="post">
-        <input type="text" placeholder="Name" />
-        <input type="text" placeholder="Email" />
-        <textarea
-          name="Message"
-          id=""
-          cols="30"
-          rows="10"
-          fixed
-          placeholder="Message"
-        ></textarea>
-        <input type="hidden" name="_next" value="https://gdqlabs.com">
-        <input type="hidden" name="_captcha" value="false">
-        <button class="send-btn">Send</button>
-      </form>
+    <script src="script.js"></script>
+    <!-- navbar code ends  -->
+
+    <!-- products section starts  -->
+    <div class="products-sec" id="products">
+      <h1 class="products-headings">PRODUCTS</h1>
+      <div class="prodbox">
+        <div class="box-content">
+          <img src="nano2.png" class="product-img" alt="" />
+          <ul class="product-title">
+            Nano Burst
+          </ul>
+        </div>
+        <div class="box-btn">
+          <a href="Product-broucher.pdf" download="Nano-Burst" id="productfont"
+            ><button id="product-pdf-btn">View Product</button></a
+          >
+        </div>
       </div>
-      <div class="contact-card">
-        <div class="contact-card-inner">
-          <h3>INFO</h3>
-          <p>
-            <img src="Address.png" alt="" />IHUB Quantum Technology Foundation,
-            Indian Institute of Science Education & Research, Dr. Homi Bhabha
-            Road, Pashan Pune , Maharashtra - 411008
-          </p>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.5798701125827!2d73.80555021092424!3d18.547878282478226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf118f87a0c3%3A0xac59e2c8cd50a95b!2sI-HUB%20Quantum%20Technology%20Foundation!5e0!3m2!1sen!2sin!4v1685379975779!5m2!1sen!2sin"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-          <p><img src="Email.png" alt="" srcset="" />gdqlabs@gmail.com</p>
+      <div class="prodbox lastprodbox">
+        <div class="box-content">
+          <img src="rf-driver.png" class="product-img" alt="" />
+          <ul class="product-title">
+            RF Driver
+          </ul>
+        </div>
+        <div class="box-btn">
+          <a href="abc.pdf" download="RF Driver" id="productfont"
+            ><button id="product-pdf-btn">View Product</button></a
+          >
         </div>
       </div>
     </div>
-    <!-- *********Footer********** -->
+    <!-- product section ends  -->
+
+    <!-- footer here  -->
     <div class="footer-body">
       <div class="footer">
         <p class="foothead">GDQ-labs</p>
@@ -110,12 +101,12 @@
                 <a href="index.html">About Us</a>
                 <a href="slider.html">Technology</a>
                 <a href="team.html">Our Team</a>
-                <a href="#contact">Contact Us</a>
+                <a href="contact.html">Contact Us</a>
               </li>
             </ul>
           </div>
           <div class="socials">
-            <a href="products.html"
+            <a href="#products"
               ><button class="btn-type-1 footer-btn">Products</button></a
             >
             <br />
@@ -157,6 +148,5 @@
         </center>
       </div>
     </div>
-    <script src="contact.js"></script>
   </body>
 </html>
